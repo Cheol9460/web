@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<style>
+			 table {
+			    width: 100%;
+			    border: 1px solid black;
+			    border-collapse: collapse;
+			  }
+			  th, td {
+			    border: 1px solid black;
+			    padding: 20px;
+			  }
+			  #text{
+			   color:#8b008b;
+			  }
+			  #submitBt{
+			   	WIDTH: 120pt; 
+			  	HEIGHT: 60pt;
+			  	margin: 0% 40%;
+			  }
+		</style>
+	</head>
+	<body>
+		<form action="result.jsp" method="get">
+			<h2>정보입력 및 본인확인</h2>
+			<table>
+				<tr>
+					<td>아이디</td>
+					<td><input type="text" name="id" id="id">
+					<input type="button" value="중복확인" ></td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td><input type="password" name="pw" id="pw" ></td>
+				</tr>
+				<tr>
+					<td>비밀번호확인</td>
+					<td><input type="password" name="re_pw" id="re_pw"></td>
+				</tr>
+				<tr>
+					<td>이름</td>
+					<td><input type="text" name="_name" id="_name"></td>
+				</tr>
+				<tr>
+					<td>성별</td>
+					<td><input type="radio" name="gender" value="male" id="gender" checked="checked">남성
+					<input type="radio" name="gender" value="female" id="gender">여성
+					<input type="checkbox" name="collectionGender" value="동의">선택정보(성별)수집 및 이용 동의</td>
+				</tr>
+				<tr>
+					<td>생년월일</td>
+					<td><input type="date" name="date" id="date"></td>
+				</tr>
+				<tr>
+					<td>이메일</td>
+					<td>
+						<input type="email" name="email" id="email"><br>
+						<span id="text">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</span>
+					</td>
+				</tr>
+	
+				<tr>
+					<td>휴대폰</td>
+					<td>
+						<input type="text" name="tel" id="tel"><br>
+						<input type="checkbox" name="collectionTel" id="collectionTel" value="동의">
+						선택정보(휴대폰)수집 및 이용 동의<br>
+						<span id="text">아이디나 비밀번호를 찾기위해 사용되오니 정확한 정보로 입력하시기 바랍니다.</span>
+					</td>
+				</tr>
+			
+				<tr>
+					<td>인증방법</td>
+					<td>
+						<input type="radio" id="certification1" name="certification" value="휴대폰" checked="checked">휴대폰
+						<input type="radio" id="certification2" name="certification" value="이메일">이메일
+						<input type="button" value="인증"><br>
+						<span id = "text">휴대폰 인증을 위한 인증번호 발송은 1일 최대 3회까지 가능합니다.</span>
+					</td>
+				</tr>
+				<tr>
+					<td>인증번호</td>
+					<td>
+						<input type="text" id="certificationNum" name="certificationNum">
+						<input type="button" value="확인">
+					</td>
+				</tr>
+			</table>
+			<input type="submit" value="확인" id="submitBt">
+		</form>
+	</body>
+</html>

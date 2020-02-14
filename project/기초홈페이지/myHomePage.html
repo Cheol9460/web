@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>나의 홈페이지</title>
+</head>
+<body>
+	<h1>나의 홈페이지</h1> <!-- 블럭요소의 태그 
+						  줄바꿈 형태를 띄고있음
+						  h1, div, br, hr, ...
+						  
+						  인라인 요소의 태그
+						  줄바꿈을 안하는 형태를 띄고 있음
+						  a, img, strong, em, span, ...	
+									-->
+	<a href = "#section1">바로가기</a><br> <!-- #은 <a> 태그에서 선언한 아이디를 의미한다. -->
+	<img src="image.jpg" width="200px" alt="카카오톡 프로필사진입니다." title="사진입니다."><br>
+	<strong>컴퓨터 프로그래머를 꿈구며 열심히 대덕인재개발원에서 공부하고 있는 강현철입니다.</strong>
+	<p>현재 학습하고있는 과목</p>
+	<ul>
+		<li>HTML5 &amp; <a href="http://www.naver.com" target="_blank" >Script W3C사이트</a></li>
+		<li>JAVA</li>								<!-- _self가 default값이다.  -->
+		<li>데이터베이스</li>
+		<li>JSP</li>
+	</ul>
+	
+	<dl><!-- <dl> : 정의가 있는 리스트 -->
+		<dt><strong>에스프레소</strong></dt><!-- <dt> : 타이틀 -->
+		<dd>- <em>커피</em>의 기본, <em>커피</em>의 원액</dd> <!-- <dd> :내용 -->
+		<dt><strong>아메리카노</strong></dt>
+		<dd>- 에스프레소에 물을 넣은것</dd>
+	</dl>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	
+	<strong><a id = "section1">참고사항</a></strong> <!-- 바로가기를 위한 구역에 id설정 -->
+	<a href = "mailto:kodolyi1@daum.net">kodolyi1@daum.net</a>
+	<table border="1">
+		<caption>시간표</caption>
+		<tr>
+			<th></th>
+			<th>3월</th>
+			<th>4월</th>
+			<th>5월</th>
+			<th>6월</th>
+			<th>7월</th>
+			<th>8월</th>
+			<th>9월</th>
+		</tr>
+		<tr>
+			<td>오전</td>
+			<td>HTML5 &amp; Script</td>
+			<td>jQuery</td>
+			<td>고급자바</td>
+			<td>JSP</td>
+			<td>Framework</td>
+			<td>프로젝트</td>
+			<td>프로젝트</td>
+		</tr>
+		<tr>
+			<td>오후</td>
+			<td>기초자바</td>
+			<td>Oracle</td>
+			<td>고급자바</td>
+			<td>JSP</td>
+			<td>Framework</td>
+			<td>프로젝트</td>
+			<td>프로젝트</td>
+		</tr>	
+	</table>
+	
+
+</body>
+</html>
